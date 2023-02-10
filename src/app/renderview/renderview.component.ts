@@ -23,8 +23,10 @@ export class RenderviewComponent implements AfterViewInit {
     this.toggle = !this.toggle;
     if (this.toggle) {
       this.renderer.setStyle(this.box.nativeElement, 'backgroundColor', 'blue');
+      // this.box.nativeElement.style.backgroundColor = 'blue'
     }else{
       this.renderer.setStyle(this.box.nativeElement, 'backgroundColor', 'red');
+      // this.box.nativeElement.style.backgroundColor = 'red'
     }
   }
 }
