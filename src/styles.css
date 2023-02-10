@@ -10,8 +10,7 @@
 }
 
 .active{
-    background: #000;
-    color:white;
-    text-decoration: underline;
-    
+    background: red;
+    color:black; 
+    padding: 2px;  
 }
