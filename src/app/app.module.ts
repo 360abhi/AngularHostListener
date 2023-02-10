@@ -8,6 +8,7 @@ import { HostlistenComponent } from './hostlisten/hostlisten.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ChildComponent } from './child/child.component';
+import { TestdirDirective } from './Directives/testdir.directive';
 
 const appRoutes: Routes =[
   { path: '' , component: HomeComponent  },
@@ -22,7 +23,8 @@ const appRoutes: Routes =[
     RenderviewComponent,
     HostlistenComponent,
     HomeComponent,
-    ChildComponent
+    ChildComponent,
+    TestdirDirective
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
-import { AfterContentInit, Component, ContentChild, ElementRef, Renderer2 } from '@angular/core';
+import {  Component, ContentChild, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { TestdirDirective } from '../Directives/testdir.directive';
 
 @Component({
   selector: 'app-child',
@@ -8,15 +9,17 @@ import { AfterContentInit, Component, ContentChild, ElementRef, Renderer2 } from
 export class ChildComponent  {
 
   @ContentChild('childcont') childparagraph : ElementRef;
+  @ViewChild(TestdirDirective) myDirecitve: TestdirDirective
 
   constructor(private renderer: Renderer2){}
 
   addText() : void {
     let text = this.renderer.createText(" this is the added text");
     this.renderer.appendChild(this.childparagraph.nativeElement,text);
+    this.renderer.setStyle(this.childparagraph.nativeElement,'color', 'red')
   }
  
-
- 
-  
+  changeColor(color:string) : void {
+    this.myDirecitve.changeColor(color);
+  }  
 }

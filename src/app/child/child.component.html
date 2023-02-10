@@ -1,6 +1,10 @@
-
-<div class="child w-[600px] flex bg-red-100 p-4 flex-col gap-5 ">
+<div appTestdir class="child w-[600px] flex bg-red-100 p-4 flex-col gap-5 ">
     <p class="text-xl robotFont">Current Value</p>
-    <button class="btn btn-warning bg-red-500 mr-auto" (click)="addText()">See</button>
+    <div class="flex gap-2">
+        <button class="btn btn-warning bg-red-500 mr-auto" (click)="addText()">Add Text</button>
+        <button class="btn btn-warning mr-auto bg-red-700" (click)="changeColor('red')">Red</button>
+        <button class="btn btn-warning mr-auto bg-blue-700" (click)="changeColor('blue')">Blue</button>
+        <button class="btn btn-warning mr-auto bg-yellow-500" (click)="changeColor('yellow')">Yellow</button>
+    </div>
     <ng-content></ng-content>
 </div>

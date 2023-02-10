@@ -46,9 +46,7 @@ export class RenderviewComponent implements AfterViewInit {
       // this.renderer.setStyle(this.box.nativeElement, 'color', 'black');
       // this.box.nativeElement.style.backgroundColor = 'red'
     }
-   
     // console.log(this.para)
   //   this.para.nativeElement.style.innerHTML = "changed"
-  // }
 }
 }
