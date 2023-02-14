@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ChildComponent } from './child/child.component';
 import { TestdirDirective } from './Directives/testdir.directive';
 import { HostdirectiveDirective } from './Directives/hostdirective.directive';
+import { DropdownDirective } from './Directives/dropdown.directive';
 
 const appRoutes: Routes =[
   { path: '' , component: HomeComponent  },
@@ -26,7 +27,8 @@ const appRoutes: Routes =[
     HomeComponent,
     ChildComponent,
     TestdirDirective,
-    HostdirectiveDirective
+    HostdirectiveDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
