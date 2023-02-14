@@ -11,9 +11,7 @@ export class HostlistenComponent {
   //   // console.log("scrolling now")
   // }
 
-  @HostListener('click') clickFun(): void{
-    // console.log("clicked")
-  }
-
- 
+  // @HostListener('click') clickFun(): void{
+  //   // console.log("clicked")
+  // }
 }

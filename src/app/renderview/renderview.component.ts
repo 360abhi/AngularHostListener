@@ -11,6 +11,7 @@ import {
   templateUrl: './renderview.component.html',
   styleUrls: ['./renderview.component.css'],
 })
+
 export class RenderviewComponent implements AfterViewInit {
   @ViewChild('box') box: ElementRef;
   @ViewChild('para') para : ElementRef;
